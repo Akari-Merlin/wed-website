@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Ostim website design</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+   <script src="https://kit.fontawesome.com/74db0a40b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="sub-header">
+<nav>
+  <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+  <div class="menu-icon"></div>
+  <div class="nav-links">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="programs.html">PROGRAMS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+</nav>
+<h1>Contact Us</h1>
+</section>
+   <!-----------contact content----->
+  <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.7654388047235!2d32.7437811!3d39.9689967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d349a85971269f%3A0xebe064ffd651704!2sOstim%20Teknik%20%C3%9Cniversitesi!5e0!3m2!1sen!2str!4v1688124007788!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+          <div>
+              <i class="fa fa-home"></i>
+            <span>
+            <h5>Ostim, 100. Yıl Blv 55/F, 06374 Ostim Osb</h5>
+            <p>Yenimahalle/Ankara</p>
+            </span>
+            </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+            <h5>+90 312 386 10 92</h5>
+            <p>Monday to Friday,9AM to 8PM</p>
+            </span>
+            </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+            <h5>info@ostimteknik.edu.tr</h5>
+            <p>Email Us Your Query</p>
+            </span>
+            </div>
+        </div>
+        <div class="contact-col">
+        <form action="">
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email Address" required>
+            <input type="text" placeholder="Enter Your subject" required>
+            <textarea rows="8" placeholder="message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+        </div>
+    </section>
+     <!----------footer----------->
+    <section class="footer">
+        <h4> About Us</h4>
+        <P>Jwxei fnhvl ygzrc qsdop. Vrqcm ejhfu ynwbg lzadp. Xisku jyrqb nfloz eamvw. Zqkux vyepj mwihb gntsf<br>.Fqijl rwsax gdvze kyhntc. Lbtku sxfrj jyiam zdcmo. Ouvqe rkjlx pwhns bgifd.</P>
+        <div class="icons">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter-square"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+        <p> The website was Made with <i class="fa fa-heart-o"></i>by<br><i class="fa fa-user"></i>Djoumana Manar Chaib ID(200301913) <br>
+        <i class="fa fa-user"></i> Hadear Talal Ameen ID(200201957) </p>
+    </section>
+    <!---------javascript for the menu-------->
+    <script>
+var menuIcon = document.querySelector('.menu-icon');
+var navLinks = document.querySelector('.nav-links');
+
+
+menuIcon.addEventListener('click', function() {
+  menuIcon.classList.toggle('active');
+  navLinks.classList.toggle('active');
+});
+
+
+document.addEventListener('click', function(event) {
+  var target = event.target;
+  var isOutsideContainer = !navLinks.contains(target) && !menuIcon.contains(target);
+  if (isOutsideContainer) {
+    menuIcon.classList.remove('active');
+    navLinks.classList.remove('active');
+  }
+});
+</script>
+</body>
+</html>
